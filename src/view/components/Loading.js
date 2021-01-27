@@ -33,7 +33,7 @@ export default function Loading() {
         <div className="bg-white d-flex align-items-center rounded-lg p-3 outline-none">
             {/* circular progress importado do material ui */}
             <CircularProgress size={20} className="mr-3"/>
-            {/* typograpy é para colocar a mensagem, variant é o tipo da font
+            {/* typograpy é para colocar a mensagem, variant é o tipo da font (h1, h2, title)
             tem na doc do material UI */}
             <Typography variant="subtitle1">{loading.msg}</Typography>
         </div>
