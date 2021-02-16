@@ -26,7 +26,7 @@ import Routes from './Routes';
 //fazendo dessa forma o react automaticamente vai pegar o arquivo index
 //no arquivo index dentro da pasta components foi importado e exportado
 //todos os componentes da aplicação
-import { Loading, Notify, Alert } from './view/components';
+import { Loading, Notify, Alert, Alertr, Confirm} from './view/components';
 
 
 //criando constante para definir cor do tema
@@ -54,6 +54,12 @@ const theme = createMuiTheme({
 const App = () => (
   <Provider store={store}>
   <ThemeProvider theme={theme}>
+      {/* <Confirm
+        open={true}
+        onClose={() => alert('close')}
+        onConfirm={() => alert('confirm')}
+      /> */}
+      <Alertr/>
       <Alert/>
       <Notify/>
       <Loading/>

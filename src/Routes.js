@@ -2,6 +2,9 @@
 import React, {Suspense, lazy} from 'react'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import { CircularProgress } from '@material-ui/core'
+//o export de auth esta default por isso importei sem parenteses
+//ele pega automaticamente o index
+import Auth from './view/auth'
 
 
 
@@ -11,7 +14,9 @@ const Routes = () => (
         <Suspense fallback={<div className="d-flex justify-content-center mt-5 pt-5"> <CircularProgress/> </div>}>
            <Switch>
                {/* Route são as rotas */}
-               <Route path="/" component={() => ( <h1>Home</h1>)}/>
+               <Route path="/vehicles" component={() => (<h1>Veiculos</h1>)}/>
+               <Route path="/login" component={Auth}/>
+               <Route path="/" component={Auth}/>
            </Switch>
         </Suspense>
     </Router>

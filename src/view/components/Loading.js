@@ -30,7 +30,7 @@ export default function Loading() {
          //classes do bootstrap
          className="d-flex justify-content-center align-items-center h-100"
        >
-        <div className="bg-white d-flex align-items-center rounded-lg p-3 outline-none">
+        <div className="bg-white d-flex align-items-center rounded-lg p-3">
             {/* circular progress importado do material ui */}
             <CircularProgress size={20} className="mr-3"/>
             {/* typograpy é para colocar a mensagem, variant é o tipo da font (h1, h2, title)
